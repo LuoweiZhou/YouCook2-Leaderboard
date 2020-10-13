@@ -9,7 +9,7 @@ This repo hosts leaderboards on YouCook2 and related resources. The main tasks c
 
 | Methods | R@1 | R@5 | R@10 | Median R | Proceedings | Link to Paper | Notes |
 |-|-|-|-|-|-|-|-|
-| MIL-NCE | 13.9  | 36.3 | 48.9 | 11 | CVPR 2020 | [Miech et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Miech_End-to-End_Learning_of_Visual_Representations_From_Uncurated_Instructional_Videos_CVPR_2020_paper.pdf) | zero-shot; rerun with official [code](https://github.com/antoine77340/MIL-NCE_HowTo100M) |
+| MIL-NCE | 13.9  | 36.3 | 48.9 | 11 | CVPR 2020 | [Miech et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Miech_End-to-End_Learning_of_Visual_Representations_From_Uncurated_Instructional_Videos_CVPR_2020_paper.pdf) | zero-shot; rerun with the official [code](https://github.com/antoine77340/MIL-NCE_HowTo100M) |
 | Miech et al. | 8.2 | 24.5 | 35.3 | 24 | ICCV 2019 | [Miech et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) |  |
 |  |  |  |  |  |  |  |  |
 
@@ -27,6 +27,7 @@ Evaluation on this task diverges into two modes: macro-level and micro-level. In
 |  |  |  |  |  |  |  |  |  |
 
 - Micro-level
+
 | Methods | Input Modality | B@3 | B@4 | M | C | Proceedings | Link to Paper | Notes |
 |-|-|-|-|-|-|-|-|-|
 | ActBERT | V | 8.66 | 5.41 | 13.30 | 65.0 | CVPR 2020 | [Zhu et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhu_ActBERT_Learning_Global-Local_Video-Text_Representations_CVPR_2020_paper.pdf) |  |
@@ -56,10 +57,12 @@ A dedicated leaderboard on this task on the **test set**: https://competitions.c
 
 ## <a name='req'></a> FAQ
 - Why there is no test set?
+
 We withheld the test split of YouCook2 for evaluation purposes on event proposal generation and dense video description. Releasing the event segments (for video captioning) or captions (for text-to-video retrieval) break the confidentiality of the leaderboard on the former two tasks. However, since there is a growing interest in the latter two tasks, we are considering releasing the full test annotation for research purposes. This will likely happen after CVPR'21
 deadline.
 
 - Can I submit results from arXiv papers?
+
 For now, we only accept **published** works to maintain a high result credibility. Therefore, we do not accept results from arXiv papers.
 
 
