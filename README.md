@@ -56,7 +56,7 @@ A dedicated leaderboard on this task on the **test set**: https://competitions.c
 
 | Methods | Input Modality | Box Acc. (Val) | Box Acc. (Test) | Proceedings | Link to Paper | Notes |
 |-|-|-|-|-|-|-|
-| DVSA + (lw, obj int) | V | 30.31 | 31.73 | BMVC 2018 | [Zhou et al.](https://arxiv.org/pdf/1805.02834.pdf) |  |
+| DVSA + (lw, obj int) | V+T | 30.31 | 31.73 | BMVC 2018 | [Zhou et al.](https://arxiv.org/pdf/1805.02834.pdf) |  |
 
 
 ## <a name='req'></a> FAQ
