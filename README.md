@@ -54,6 +54,10 @@ A dedicated leaderboard on this task on the **test set**: https://competitions.c
 ## Object Grounding
 A dedicated leaderboard on this task on the **test set**: https://competitions.codalab.org/competitions/20302
 
+| Methods | Input Modality | Box Acc. (Val) | Box Acc. (Test) | Proceedings | Link to Paper | Notes |
+|-|-|-|-|-|-|-|
+| DVSA + (lw, obj int) | V | 30.31 | 31.73 | BMVC 2018 | [Zhou et al.](https://arxiv.org/pdf/1805.02834.pdf) |  |
+
 
 ## <a name='req'></a> FAQ
 - Why there is no test set?
