@@ -11,13 +11,12 @@ This repo hosts leaderboards on YouCook2 and related resources. The main tasks c
 |-|-|-|-|-|-|-|-|
 | MIL-NCE | 13.9  | 36.3 | 48.9 | 11 | CVPR 2020 | [Miech et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Miech_End-to-End_Learning_of_Visual_Representations_From_Uncurated_Instructional_Videos_CVPR_2020_paper.pdf) | zero-shot; rerun with the official [code](https://github.com/antoine77340/MIL-NCE_HowTo100M) |
 | Miech et al. | 8.2 | 24.5 | 35.3 | 24 | ICCV 2019 | [Miech et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) |  |
-|  |  |  |  |  |  |  |  |
 
 
 ## Video Captioning
 In this task, we assume GT event segments are available (i.e., the start and end timestamps of each recipe step).
 
-Evaluation on this task diverges into two modes: micro-level and macro-level. In macro-level evaluation, language metric scores are first averaged across segments within each video and then averaged across the dataset. In micro-level evaluation, the averaged score on all segments is reported.
+Evaluation on this task diverges into two modes: micro-level and macro-level. In micro-level evaluation, the averaged score on all segments is reported. In macro-level evaluation, language metric scores are first averaged across segments within each video and then averaged across the dataset.
 
 - Micro-level
 
@@ -35,7 +34,6 @@ Evaluation on this task diverges into two modes: micro-level and macro-level. In
 | Methods | Input Modality | B@3 | B@4 | M | C | Proceedings | Link to Paper | Notes |
 |-|-|-|-|-|-|-|-|-|
 | Masked Trans. | V | 5.08 | 1.42 | 11.20 | 45.13 | CVPR 2018 | [Zhou et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_End-to-End_Dense_Video_CVPR_2018_paper.pdf) |  |
-|  |  |  |  |  |  |  |  |  |
 
 
 Note: `B@3` - `BLEU@3`, `B@4` - `BLEU@4`, `M` - `METEOR`, and `C` - `CIDEr`. The input modalities include video (V), transcript (T) or both (V+T). Evaluation code: [Macro-level](https://github.com/LuoweiZhou/densevid_eval_spice) and [Micro-level](https://github.com/tylin/coco-caption).
@@ -126,13 +124,9 @@ https://www.di.ens.fr/willow/research/howto100m/
 
 https://openaccess.thecvf.com/content_CVPR_2020/papers/Miech_End-to-End_Learning_of_Visual_Representations_From_Uncurated_Instructional_Videos_CVPR_2020_paper.pdf
 
-MSRVTT:
+MSRVTT: https://www.microsoft.com/en-us/research/publication/msr-vtt-a-large-video-description-dataset-for-bridging-video-and-language/
 
-https://www.microsoft.com/en-us/research/publication/msr-vtt-a-large-video-description-dataset-for-bridging-video-and-language/
-
-Epic-Kitchen:
-
-https://epic-kitchens.github.io/2020-100
+Epic-Kitchen: https://epic-kitchens.github.io/2020-100
 
 SOTA Dense Video Captioning metric: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123510511.pdf
 
