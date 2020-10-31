@@ -19,6 +19,17 @@ In this task, we assume GT event segments are available (i.e., the start and end
 
 Evaluation on this task diverges into two modes: macro-level and micro-level. In macro-level evaluation, language metric scores are first averaged across segments within each video and then averaged across the dataset. In micro-level evaluation, the averaged score on all segments is reported.
 
+- Micro-level
+
+| Methods | Input Modality | B@3 | B@4 | M | C | Proceedings | Link to Paper | Notes |
+|-|-|-|-|-|-|-|-|-|
+| ActBERT | V | 8.66 | 5.41 | 13.30 | 65.0 | CVPR 2020 | [Zhu et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhu_ActBERT_Learning_Global-Local_Video-Text_Representations_CVPR_2020_paper.pdf) |  |
+| VideoBERT | V | 7.59 | 4.33 | 11.94 | 55.0 | ICCV 2019 | [Sun et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Sun_VideoBERT_A_Joint_Model_for_Video_and_Language_Representation_Learning_ICCV_2019_paper.pdf) |  |
+| Masked Trans. | V | 7.53 | 3.85 | 10.68\* | 37.9 | CVPR 2018 | [Zhou et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_End-to-End_Dense_Video_CVPR_2018_paper.pdf) | \*Erratum on the original [VideoBERT](https://openaccess.thecvf.com/content_ICCV_2019/papers/Sun_VideoBERT_A_Joint_Model_for_Video_and_Language_Representation_Learning_ICCV_2019_paper.pdf) report |
+| AT | T | - | 8.55 | 16.93 | 106.0 | CoNLL 2019 | [Hessel et al.](https://arxiv.org/pdf/1910.02930.pdf) |  |
+| AT+Video | V+T | - | 9.01 | 17.77 | 112.0 | CoNLL 2019 | [Hessel et al.](https://arxiv.org/pdf/1910.02930.pdf) |  |
+| DPC | V+T | 7.60 | 2.76 | 18.08 | - | ACL 2019 | [Shi et al.](https://www.aclweb.org/anthology/P19-1641.pdf) |  |
+
 - Macro-level
 
 | Methods | Input Modality | B@3 | B@4 | M | C | Proceedings | Link to Paper | Notes |
@@ -26,17 +37,6 @@ Evaluation on this task diverges into two modes: macro-level and micro-level. In
 | Masked Trans. | V | - | 1.42 | 11.20 | - | CVPR 2018 | [Zhou et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_End-to-End_Dense_Video_CVPR_2018_paper.pdf) |  |
 |  |  |  |  |  |  |  |  |  |
 
-- Micro-level
-
-| Methods | Input Modality | B@3 | B@4 | M | C | Proceedings | Link to Paper | Notes |
-|-|-|-|-|-|-|-|-|-|
-| ActBERT | V | 8.66 | 5.41 | 13.30 | 65.0 | CVPR 2020 | [Zhu et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhu_ActBERT_Learning_Global-Local_Video-Text_Representations_CVPR_2020_paper.pdf) |  |
-| CBT | V | - | 5.12 | 12.97 | 64.0 | arXiv | [Sun et al.](https://arxiv.org/pdf/1906.05743.pdf) |  |
-| VideoBERT | V | 7.59 | 4.33 | 11.94 | 55.0 | ICCV 2019 | [Sun et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Sun_VideoBERT_A_Joint_Model_for_Video_and_Language_Representation_Learning_ICCV_2019_paper.pdf) |  |
-| Masked Trans. | V | 7.53 | 3.85 | 10.68\* | 37.9 | CVPR 2018 | [Zhou et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_End-to-End_Dense_Video_CVPR_2018_paper.pdf) | \*Erratum on the original [VideoBERT](https://openaccess.thecvf.com/content_ICCV_2019/papers/Sun_VideoBERT_A_Joint_Model_for_Video_and_Language_Representation_Learning_ICCV_2019_paper.pdf) report |
-| AT | T | - | 8.55 | 16.93 | 106.0 | CoNLL 2019 | [Hessel et al.](https://arxiv.org/pdf/1910.02930.pdf) |  |
-| AT+Video | V+T | - | 9.01 | 17.77 | 112.0 |  | [Hessel et al.](https://arxiv.org/pdf/1910.02930.pdf) |  |
-| DPC | V+T | 7.60 | 2.76 | 18.08 | - | ACL 2019 | [Shi et al.](https://www.aclweb.org/anthology/P19-1641.pdf) |  |
 
 Note: `B@3` - `BLEU@3`, `B@4` - `BLEU@4`, `M` - `METEOR`, and `C` - `CIDEr`. The input modalities include video (V), transcript (T) or both (V+T).
 
