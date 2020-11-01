@@ -7,10 +7,18 @@ This repo hosts leaderboards on YouCook2 and related resources. The main tasks c
 ## Text-to-Video Retrieval
 "Video" here refers to video **clips** (a cooking video usually contains multiple steps/clips). Each clip is considered an individual video assuming the clip boundary is given. Text to whole video retrieval is not considered in this task.
 
-| Methods | R@1 | R@5 | R@10 | Median R | Proceedings | Link to Paper | Notes |
-|-|-|-|-|-|-|-|-|
-| MIL-NCE | 13.9  | 36.3 | 48.9 | 11 | CVPR 2020 | [Miech et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Miech_End-to-End_Learning_of_Visual_Representations_From_Uncurated_Instructional_Videos_CVPR_2020_paper.pdf) | zero-shot; rerun with the official [code](https://github.com/antoine77340/MIL-NCE_HowTo100M) |
-| Miech et al. | 8.2 | 24.5 | 35.3 | 24 | ICCV 2019 | [Miech et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) |  |
+| Methods      |  R@1 (▲) |  R@5 (▲) | R@10 (▲) | Median R (▼) | Proceedings | Link to Paper | Notes |
+|:------------:|---------:|---------:|---------:|-------------:|:-----------:|:-------------:|:-----:|
+| Random       |    0.0   |    0.2   |    0.3   |       1675   |             |               |       |
+| HGLMM        |    4.6   |   14.3   |   21.6   |         75   | CVPR 2015   | [Klein et al.](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Klein_Associating_Neural_Word_2015_CVPR_paper.pdf) | zero-shot; reported in [Miech et al., 2019](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) |
+| Miech et al. |    6.1   |   17.3   |   24.8   |         46   | ICCV 2019   | [Miech et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) | zero-shot |
+| ActBERT      |    9.6   |   26.7   |   38.0   |         19   | CVPR 2020   | [Zhu et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhu_ActBERT_Learning_Global-Local_Video-Text_Representations_CVPR_2020_paper.pdf) | zero-shot
+| MMV FAC      |   11.7   |   33.4   |   45.4   |         13   | arXiv 2020  | [Alayrac et al.](https://arxiv.org/pdf/2006.16228.pdf) | zero-shot |
+| MIL-NCE      |   13.9   |   36.3   |   48.9   |         11   | CVPR 2020   | [Miech et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Miech_End-to-End_Learning_of_Visual_Representations_From_Uncurated_Instructional_Videos_CVPR_2020_paper.pdf) | zero-shot; rerun with the official [code](https://github.com/antoine77340/MIL-NCE_HowTo100M) |
+| AVLnet-Text  | **25.6** | **52.7** | **64.4** |        **5** | arXiv 2020  | [Rouditchenko et al.](https://arxiv.org/pdf/2006.09199.pdf) | zero-shot |
+| Miech et al. |    8.2   |   24.5   |   35.3   |         24   | ICCV 2019   | [Miech et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) | |
+| UniVL        |   28.9   |   57.6   |   70.0   |          4   | arXiv 2020  | [Luo et al.](https://arxiv.org/abs/2002.06353) | |
+| AVLNet-Text  | **33.2** | **61.0** | **71.5** |        **3** | arXiv 2020  | [Rouditchenko et al.](https://arxiv.org/pdf/2006.09199.pdf) | |
 
 
 ## Video Captioning
