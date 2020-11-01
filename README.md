@@ -16,6 +16,7 @@ This repo hosts leaderboards on YouCook2 and related resources. The main tasks c
 | MIL-NCE      | **13.9** | **36.3** | **48.9** |       **11** | CVPR 2020   | [Miech et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Miech_End-to-End_Learning_of_Visual_Representations_From_Uncurated_Instructional_Videos_CVPR_2020_paper.pdf) | zero-shot; rerun with the official [code](https://github.com/antoine77340/MIL-NCE_HowTo100M) |
 | Miech et al. |  **8.2** | **24.5** | **35.3** |       **24** | ICCV 2019   | [Miech et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) | |
 
+All these results were evaluated using [a subset of 3,350/3,492 video clips from the validation set that aren't present in HowTo100M](https://github.com/antoine77340/MIL-NCE_HowTo100M/blob/master/csv/validation_youcook.csv).
 
 ## Video Captioning
 In this task, we assume GT event segments are available (i.e., the start and end timestamps of each recipe step).
