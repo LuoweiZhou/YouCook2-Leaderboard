@@ -9,7 +9,7 @@ This repo hosts leaderboards on YouCook2 and related resources. The main tasks c
 
 | Methods      |  R@1 (▲) |  R@5 (▲) | R@10 (▲) | Median R (▼) | Proceedings | Link to Paper | Notes |
 |:------------:|---------:|---------:|---------:|-------------:|:-----------:|:-------------:|:-----:|
-| Random       |    0.0   |    0.2   |    0.3   |       1675   |             |               |       |
+| Random       |    0.0   |    0.2   |    0.3   |       1675   |             |               | reported in [Miech et al., 2019](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) |
 | HGLMM        |    4.6   |   14.3   |   21.6   |         75   | CVPR 2015   | [Klein et al.](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Klein_Associating_Neural_Word_2015_CVPR_paper.pdf) | zero-shot; reported in [Miech et al., 2019](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) |
 | Miech et al. |    6.1   |   17.3   |   24.8   |         46   | ICCV 2019   | [Miech et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) | zero-shot |
 | ActBERT      |    9.6   |   26.7   |   38.0   |         19   | CVPR 2020   | [Zhu et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhu_ActBERT_Learning_Global-Local_Video-Text_Representations_CVPR_2020_paper.pdf) | zero-shot
