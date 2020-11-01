@@ -70,7 +70,7 @@ For now, we only accept **published** works to maintain a high result credibilit
 
 ## Reference (bibtex)
 YouCook2 dataset paper:
-```
+```bibtex
 @inproceedings{ZhXuCoCVPR18,
     author={Zhou, Luowei and Xu, Chenliang and Corso, Jason J},
     title = {Towards Automatic Learning of Procedures From Web Instructional Videos},
@@ -82,7 +82,7 @@ YouCook2 dataset paper:
 ```
 
 Video description benchmark on YouCook2:
-```
+```bibtex
 @inproceedings{zhou2018end,
     title={End-to-End Dense Video Captioning with Masked Transformer},
     author={Zhou, Luowei and Zhou, Yingbo and Corso, Jason J and Socher, Richard and Xiong, Caiming},
@@ -93,7 +93,7 @@ Video description benchmark on YouCook2:
 ```
 
 YouCook2-BoundingBox:
-```
+```bibtex
 @inproceedings{ZhLoCoBMVC18,
     author={Zhou, Luowei and Louis, Nathan and Corso, Jason J},
     title={Weakly-Supervised Video Object Grounding from Text by Loss Weighting and Object Interaction},
