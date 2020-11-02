@@ -27,7 +27,7 @@ Evaluation on this task diverges into two modes: micro-level and macro-level. In
 - Micro-level
 
 | Methods      |Input Modality|   B@3  |   B@4  |   M   |    C   | Proceedings |Link to Paper| Notes |
-|:------------:|------------:|-------:|-------:|-------:|-------:|:-----------:|:-----------:|:-----:|
+|:------------:|:---------:|-------:|-------:|-------:|-------:|:-----------:|:-------------:|:-----:|
 | ActBERT | V | 8.66 | 5.41 | 13.30 | 65.0 | CVPR 2020 | [Zhu et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhu_ActBERT_Learning_Global-Local_Video-Text_Representations_CVPR_2020_paper.pdf) |  |
 | VideoBERT | V | 7.59 | 4.33 | 11.94 | 55.0 | ICCV 2019 | [Sun et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Sun_VideoBERT_A_Joint_Model_for_Video_and_Language_Representation_Learning_ICCV_2019_paper.pdf) |  |
 | Masked Trans. | V | 7.53 | 3.85 | 10.68\* | 37.9 | CVPR 2018 | [Zhou et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_End-to-End_Dense_Video_CVPR_2018_paper.pdf) | \*Erratum on the original [VideoBERT](https://openaccess.thecvf.com/content_ICCV_2019/papers/Sun_VideoBERT_A_Joint_Model_for_Video_and_Language_Representation_Learning_ICCV_2019_paper.pdf) report |
@@ -38,7 +38,7 @@ Evaluation on this task diverges into two modes: micro-level and macro-level. In
 - Macro-level
 
 | Methods      |Input Modality|   B@3  |   B@4  |   M   |    C   | Proceedings |Link to Paper| Notes |
-|:------------:|------------:|-------:|-------:|-------:|-------:|:-----------:|:-----------:|:-----:|
+|:------------:|:---------:|-------:|-------:|-------:|-------:|:-----------:|:-------------:|:-----:|
 | Masked Trans. | V | 5.08 | 1.42 | 11.20 | 45.13 | CVPR 2018 | [Zhou et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_End-to-End_Dense_Video_CVPR_2018_paper.pdf) |  |
 
 
