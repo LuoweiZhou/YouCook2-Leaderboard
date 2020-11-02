@@ -5,7 +5,7 @@ This repo hosts leaderboards on YouCook2 and related resources. The main tasks c
 
 
 ## Text-to-Video Retrieval
-"Video" here refers to video **clips** (a cooking video usually contains multiple steps/clips). Each clip is considered an individual video assuming the clip boundary is given. Text to whole video retrieval is not considered in this task.
+"Video" here refers to video **clips** (a cooking video usually contains multiple steps/clips). Each clip is considered an individual video assuming the clip boundary is given. Text to **whole** video retrieval is not considered in this task.
 
 | Methods      |  R@1 (▲) |  R@5 (▲) | R@10 (▲) | Median R (▼) | Proceedings | Link to Paper | Notes |
 |:------------:|---------:|---------:|---------:|-------------:|:-----------:|:-------------:|:-----:|
@@ -18,6 +18,7 @@ This repo hosts leaderboards on YouCook2 and related resources. The main tasks c
 
 All these results were evaluated using [a subset of 3,350/3,492 video clips from the validation set that aren't present in HowTo100M](https://github.com/antoine77340/MIL-NCE_HowTo100M/blob/master/csv/validation_youcook.csv).
 
+
 ## Video Captioning
 In this task, we assume GT event segments are available (i.e., the start and end timestamps of each recipe step).
 
@@ -25,8 +26,8 @@ Evaluation on this task diverges into two modes: micro-level and macro-level. In
 
 - Micro-level
 
-| Methods | Input Modality | B@3 | B@4 | M | C | Proceedings | Link to Paper | Notes |
-|-|-|-|-|-|-|-|-|-|
+| Methods      |Input Modality|   B@3  |   B@4  |   M   |    C   | Proceedings |Link to Paper| Notes |
+|:------------:|------------:|-------:|-------:|-------:|-------:|:-----------:|:-----------:|:-----:|
 | ActBERT | V | 8.66 | 5.41 | 13.30 | 65.0 | CVPR 2020 | [Zhu et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhu_ActBERT_Learning_Global-Local_Video-Text_Representations_CVPR_2020_paper.pdf) |  |
 | VideoBERT | V | 7.59 | 4.33 | 11.94 | 55.0 | ICCV 2019 | [Sun et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Sun_VideoBERT_A_Joint_Model_for_Video_and_Language_Representation_Learning_ICCV_2019_paper.pdf) |  |
 | Masked Trans. | V | 7.53 | 3.85 | 10.68\* | 37.9 | CVPR 2018 | [Zhou et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_End-to-End_Dense_Video_CVPR_2018_paper.pdf) | \*Erratum on the original [VideoBERT](https://openaccess.thecvf.com/content_ICCV_2019/papers/Sun_VideoBERT_A_Joint_Model_for_Video_and_Language_Representation_Learning_ICCV_2019_paper.pdf) report |
@@ -36,8 +37,8 @@ Evaluation on this task diverges into two modes: micro-level and macro-level. In
 
 - Macro-level
 
-| Methods | Input Modality | B@3 | B@4 | M | C | Proceedings | Link to Paper | Notes |
-|-|-|-|-|-|-|-|-|-|
+| Methods      |Input Modality|   B@3  |   B@4  |   M   |    C   | Proceedings |Link to Paper| Notes |
+|:------------:|------------:|-------:|-------:|-------:|-------:|:-----------:|:-----------:|:-----:|
 | Masked Trans. | V | 5.08 | 1.42 | 11.20 | 45.13 | CVPR 2018 | [Zhou et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_End-to-End_Dense_Video_CVPR_2018_paper.pdf) |  |
 
 
@@ -47,8 +48,8 @@ Note: `B@3` - `BLEU@3`, `B@4` - `BLEU@4`, `M` - `METEOR`, and `C` - `CIDEr`. The
 ## Dense Video Description
 In this task, we need to predict both event segments and description. The [latest](https://github.com/ranjaykrishna/densevid_eval) evaluation tool from ActivityNet Captions challenge is adopted (vs. the 2017 buggy [version](https://github.com/ranjaykrishna/densevid_eval/tree/b8d90707984bf9c99454ba82b089006f14fb62b3)).
 
-| Methods | B@3 | B@4 | M | C | Proceedings | Link to Paper | Notes |
-|-|-|-|-|-|-|-|-|
+| Methods      |   B@3  |   B@4  |   M   |    C   | Proceedings |Link to Paper| Notes |
+|:------------:|-------:|-------:|-------:|-------:|:-----------:|:-----------:|:-----:|
 | Masked Transformer | 0.72 | 0.30 | 3.18 | 6.10 | CVPR 2018 | [Zhou et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_End-to-End_Dense_Video_CVPR_2018_paper.pdf) |  |
 
 A dedicated evaluation server on the **test set** (to be updated to the latest eval code soon): https://competitions.codalab.org/competitions/20594
@@ -57,16 +58,16 @@ A dedicated evaluation server on the **test set** (to be updated to the latest e
 ## Object Grounding
 
 | Methods | Box Acc. (Val) | Box Acc. (Test) | Proceedings | Link to Paper | Notes |
-|-|-|-|-|-|-|
+|:------------:|----------:|----------:|:-----------:|:-----------:|:-----:|
 | DVSA + (lw, obj int) | 30.31 | 31.73 | BMVC 2018 | [Zhou et al.](https://arxiv.org/pdf/1805.02834.pdf) |  |
 
 A dedicated evaluation server on this task (including on the **test set**): https://competitions.codalab.org/competitions/20302
 
-## <a name='req'></a> FAQ
+
+## <a name='faq'></a> FAQ
 - Why there is no test set?
 
-We withheld the test split of YouCook2 for evaluation purposes on event proposal generation and dense video description. Releasing the event segments (for video captioning) or captions (for text-to-video retrieval) break the confidentiality of the leaderboard on the former two tasks. However, since there is a growing interest in the latter two tasks, we are considering releasing the full test annotation for research purposes. This will likely happen after CVPR'21
-deadline.
+We withheld the test split of YouCook2 for evaluation purposes on event proposal generation and dense video description. Releasing the event segments (for video captioning) or captions (for text-to-video retrieval) break the confidentiality of the leaderboard on the former two tasks. However, since there is a growing interest in the latter two tasks, we are considering releasing the full test annotation for research purposes. This will likely happen after the CVPR'21 deadline.
 
 - Can I submit results from arXiv papers?
 
@@ -108,6 +109,7 @@ YouCook2-BoundingBox:
 }
 ```
 
+
 ## Other resources
 A list of leaderboards from Paperwithcode (results might be incomplete):
 
@@ -134,6 +136,7 @@ MSRVTT: https://www.microsoft.com/en-us/research/publication/msr-vtt-a-large-vid
 Epic-Kitchen: https://epic-kitchens.github.io/2020-100
 
 SOTA Dense Video Captioning metric: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123510511.pdf
+
 
 ## Acknowledgement
 Thanks to Santiago for suggesting and contributing to the leaderboard. Thanks for Nathan for contributing to the Object Grounding part.
