@@ -1,7 +1,7 @@
 # YouCook2-Leaderboard
-This repo hosts leaderboards on YouCook2 and related resources. The main tasks concerned include text-to-video retrieval, video captioning, dense video description (captioning), and object grounding. Results are on the validation set unless otherwise specified. Note that until now, leaderboard on the test set is only available for the dense video description and object groudning (see [FQA](#faq) for details).
+This repo hosts leaderboards on YouCook2 and related resources. The main tasks concerned include text-to-video retrieval, video captioning, dense video description (captioning), and object grounding. Results are on the validation set unless otherwise specified. Note that until now, leaderboard on the test set is only available for the dense video description and object groudning (see [FQA](#faq) for details). See also our [policy](#faq) on arXiv papers.
 
-**To have your model added to the leaderboard, please reach out to [us](mailto:luozhou@microsoft.com) or submit a PR.**
+**To have your model added to the leaderboard, please reach out to [us](mailto:luozhou@microsoft.com) or submit a PR..**
 
 
 ## Text-to-Video Retrieval
@@ -135,4 +135,4 @@ Epic-Kitchen: https://epic-kitchens.github.io/2020-100
 SOTA Dense Video Captioning metric: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123510511.pdf
 
 ## Acknowledgement
-Thanks to Santiago for suggesting the initiation of YouCook2 leaderboard. Thanks for Nathan for contributing to the Object Grounding part.
+Thanks to Santiago for suggesting and contributing to the leaderboard. Thanks for Nathan for contributing to the Object Grounding part.
