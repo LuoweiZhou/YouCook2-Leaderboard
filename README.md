@@ -78,7 +78,7 @@ For now, we only accept **published** works to maintain a high result credibilit
 ## Reference (bibtex)
 YouCook2 dataset paper:
 ```bibtex
-@inproceedings{ZhXuCoCVPR18,
+@inproceedings{ZhXuCoAAAI18,
     author={Zhou, Luowei and Xu, Chenliang and Corso, Jason J},
     title = {Towards Automatic Learning of Procedures From Web Instructional Videos},
     booktitle = {AAAI Conference on Artificial Intelligence},
@@ -90,7 +90,7 @@ YouCook2 dataset paper:
 
 Video description benchmark on YouCook2:
 ```bibtex
-@inproceedings{zhou2018end,
+@inproceedings{ZhZhCoCVPR2018,
     title={End-to-End Dense Video Captioning with Masked Transformer},
     author={Zhou, Luowei and Zhou, Yingbo and Corso, Jason J and Socher, Richard and Xiong, Caiming},
     booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
@@ -140,4 +140,4 @@ SOTA Dense Video Captioning metric: https://www.ecva.net/papers/eccv_2020/papers
 
 
 ## Acknowledgement
-Thanks to Santiago for suggesting and contributing to the leaderboard. Thanks for Nathan for contributing to the Object Grounding part.
+YouCook2 has been supported in part by Google, ARO W911NF-15-1-0354, NSF CNS 1463102, NSF CNS 1628987, NSF NRI 1522904 and NSF BIGDATA 1741472. This repo solely reflects the opinions and conclusions of its authors and neither Google, ARO nor NSF. Thanks to Santiago for suggesting and contributing to the leaderboard. Thanks for Nathan for contributing to the Object Grounding part.
