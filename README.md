@@ -1,5 +1,5 @@
 # YouCook2-Leaderboard
-This repo hosts leaderboards on YouCook2 and related resources. The main tasks concerned include text-to-video retrieval, video captioning, dense video description (captioning), and object grounding. Results are on the validation set unless otherwise specified. Note that until now, leaderboard on the test set is only available for the dense video description and object groudning (see [FQA](#faq) for details). See also our [policy](#faq) on arXiv papers.
+This repo hosts leaderboards on YouCook2 and related resources. The main tasks concerned include text-to-video retrieval, video captioning, dense video description (captioning), and object grounding. Results are on the validation set unless otherwise specified. Note that until now, leaderboard on the test set is only available for the dense video description and object groudning (see [FAQ](#faq) for details). See also our [policy](#faq) on arXiv papers.
 
 **To have your model added to the leaderboard, please reach out to [us](mailto:luozhou@microsoft.com) or submit a PR.**
 
