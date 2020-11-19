@@ -22,7 +22,7 @@ All these results were evaluated using [a subset of 3,350/3,492 video clips from
 ## Video Captioning
 In this task, we assume GT event segments are available (i.e., the start and end timestamps of each recipe step).
 
-Evaluation on this task diverges into two modes: micro-level and macro-level. In micro-level evaluation, the averaged score on all segments is reported. In macro-level evaluation, language metric scores are first averaged across segments within each video and then averaged across the dataset.
+Evaluation on this task diverges into two modes: micro-level and macro-level. In micro-level evaluation, the averaged score on all segments is reported. In macro-level evaluation, language metric scores are first averaged across segments within each video and then averaged across the dataset. In paragraph-level, all the sgement level captions are firstly concatenated together as a paragraph and evaluated against the GT paragraph, the resulting metric scores are then averaged across all videos.
 
 - Micro-level
 
@@ -42,7 +42,18 @@ Evaluation on this task diverges into two modes: micro-level and macro-level. In
 | Masked Trans. | V | 5.08 | 1.42 | 11.20 | 45.13 | CVPR 2018 | [Zhou et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_End-to-End_Dense_Video_CVPR_2018_paper.pdf) |  |
 
 
-Note: `B@3` - `BLEU@3`, `B@4` - `BLEU@4`, `M` - `METEOR`, and `C` - `CIDEr`. The input modalities include video (V), transcript (T) or both (V+T). Evaluation code: [Macro-level](https://github.com/LuoweiZhou/densevid_eval_spice) and [Micro-level](https://github.com/tylin/coco-caption).
+- Paragraph-level
+
+| Methods      |Input Modality|  B@4  |   M   |    C   | R@4 | Proceedings |Link to Paper| Notes |
+|:------------:|:---------:|-------:|-------:|-------:|-------:|:-----------:|:-------------:|:-----:|
+| Masked Trans. | V | 7.62 | 15.65 | 32.26 | 7.83 | CVPR 2018 | [Zhou et al.](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_End-to-End_Dense_Video_CVPR_2018_paper.pdf) | reported by [Lei et al.](https://arxiv.org/pdf/2005.05402.pdf) |
+| Trnsformer-XL | V | 6.56 | 14.76 | 26.35 | 6.30 | ACl 2019 | [Dai et al.](https://arxiv.org/pdf/1901.02860.pdf) | adopted and reported by [Lei et al.](https://arxiv.org/pdf/2005.05402.pdf) |
+| MART | V | 8.00 | 15.9 | 35.74 | 4.39 |ACL 2020 | [Lei et al.](https://arxiv.org/pdf/2005.05402.pdf) | [code](https://github.com/jayleicn/recurrent-transformer)  |
+| COOT+MART | V | 11.30 | 19.85 | 57.24 | 6.69 | NeurIPS 2020 | [Ging et al.](https://proceedings.neurips.cc/paper/2020/file/ff0abbcc0227c9124a804b084d161a2d-Paper.pdf) | MART model with COOT features, [code](https://github.com/gingsi/coot-videotext) |
+
+
+
+Note: `B@3` - `BLEU@3`, `B@4` - `BLEU@4`, `M` - `METEOR`, and `C` - `CIDEr`. `R@4` denotes the degree of 4-gram repetitions. The input modalities include video (V), transcript (T) or both (V+T). Evaluation code: [Macro-level](https://github.com/LuoweiZhou/densevid_eval_spice), [Micro-level](https://github.com/tylin/coco-caption), and [Paragraph-level](https://github.com/jayleicn/recurrent-transformer/tree/master/densevid_eval).
 
 
 ## Dense Video Description
