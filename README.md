@@ -1,5 +1,5 @@
 # YouCook2-Leaderboard
-This repo hosts leaderboards on YouCook2 and related resources. The main tasks concerned include text-to-video retrieval, video captioning, dense video description (captioning), and object grounding. Results are on the validation set unless otherwise specified. Note that until now, leaderboard on the test set is only available for the dense video description and object groudning (see [FAQ](#faq) for details). See also our [policy](#faq) on arXiv papers.
+This repo hosts leaderboards on [YouCook2 dataset](http://youcook2.eecs.umich.edu/) and related resources. The main tasks concerned include text-to-video retrieval, video captioning, dense video description (captioning), and object grounding. Results are on the validation set unless otherwise specified. Note that until now, leaderboard on the test set is only available for the dense video description and object groudning (see [FQA](#faq) for details). See also our [policy](#faq) on arXiv papers.
 
 **To have your model added to the leaderboard, please reach out to [us](mailto:luozhou@microsoft.com) or submit a PR.**
 
@@ -22,7 +22,7 @@ All these results were evaluated using [a subset of 3,350/3,492 video clips from
 ## Video Captioning
 In this task, we assume GT event segments are available (i.e., the start and end timestamps of each recipe step).
 
-Evaluation on this task diverges into two modes: micro-level and macro-level. In micro-level evaluation, the averaged score on all segments is reported. In macro-level evaluation, language metric scores are first averaged across segments within each video and then averaged across the dataset. In paragraph-level, all the sgement level captions are firstly concatenated together as a paragraph and evaluated against the GT paragraph, the resulting metric scores are then averaged across all videos.
+Evaluation on this task diverges into three modes: micro-level, macro-level, and paragraph-level. In micro-level evaluation, the averaged score on all segments is reported. In macro-level evaluation, language metric scores are first averaged across segments within each video and then averaged across the dataset. In paragraph-level, all the sgement level captions are firstly concatenated together as a paragraph and evaluated against the GT paragraph, the resulting metric scores are then averaged across all videos.
 
 - Micro-level
 
