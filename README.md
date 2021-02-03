@@ -1,5 +1,8 @@
 # YouCook2-Leaderboard
-This repo hosts leaderboards on [YouCook2 dataset](http://youcook2.eecs.umich.edu/) and related resources. The main tasks concerned include text-to-video retrieval, video captioning, dense video description (captioning), and object grounding. Results are on the validation set unless otherwise specified. Note that until now, leaderboard on the test set is only available for the dense video description and object groudning (see [FQA](#faq) for details). See also our [policy](#faq) on arXiv papers.
+
+**(Updated on 02/03/2021) We have released the test set (segments only) to support the video captioning and object grounding task. ([Link to Download](http://youcook2.eecs.umich.edu/download)) In addition, we will release a set of caption annotations / evaluation server for the retrieval task separately later this year.**
+
+This repo hosts leaderboards on [YouCook2 dataset](http://youcook2.eecs.umich.edu/) and related resources. The main tasks concerned include text-to-video retrieval, video captioning, dense video description (captioning), and object grounding. Results are on the validation set unless otherwise specified. Note that until now, evaluation servers on the test set are available for video captioning, dense video description and object groudning (see [FQA](#faq) for details). We will add the support on video retrieval soon. See also our [policy](#faq) on arXiv papers.
 
 **To have your model added to the leaderboard, please reach out to [us](mailto:luozhou@microsoft.com) or submit a PR.**
 
@@ -79,7 +82,9 @@ A dedicated evaluation server on this task (including on the **test set**): http
 ## <a name='faq'></a> FAQ
 - Why there is no test set?
 
-We withheld the test split of YouCook2 for evaluation purposes on event proposal generation and dense video description. Releasing the event segments (for video captioning) or captions (for text-to-video retrieval) break the confidentiality of the leaderboard on the former two tasks. However, since there is a growing interest in the latter two tasks, we are considering releasing the full test annotation for research purposes. This will likely happen after the CVPR'21 deadline.
+(Updated on 02/03/2021) We have released the test set (segments only) to support the video captioning and object grounding task. ([Link to Download](http://youcook2.eecs.umich.edu/download)) In addition, we will release a set of caption annotations / evaluation server for the retrieval task separately later this year.
+
+We withheld the test split of YouCook2 for evaluation purposes on event proposal generation and dense video description. Releasing the event segments (for video captioning) or captions (for text-to-video retrieval) break the confidentiality of the leaderboard on the former two tasks.
 
 - Can I submit results from arXiv papers?
 
