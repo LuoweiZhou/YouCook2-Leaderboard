@@ -16,10 +16,16 @@ This repo hosts leaderboards on [YouCook2 dataset](http://youcook2.eecs.umich.ed
 | HGLMM        |    4.6   |   14.3   |   21.6   |         75   | CVPR 2015   | [Klein et al.](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Klein_Associating_Neural_Word_2015_CVPR_paper.pdf) | zero-shot; reported in [Miech et al., 2019](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) |
 | Miech et al. |    6.1   |   17.3   |   24.8   |         46   | ICCV 2019   | [Miech et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) | zero-shot |
 | ActBERT      |    9.6   |   26.7   |   38.0   |         19   | CVPR 2020   | [Zhu et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhu_ActBERT_Learning_Global-Local_Video-Text_Representations_CVPR_2020_paper.pdf) | zero-shot
-| MIL-NCE      | **13.9** | **36.3** | **48.9** |       **11** | CVPR 2020   | [Miech et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Miech_End-to-End_Learning_of_Visual_Representations_From_Uncurated_Instructional_Videos_CVPR_2020_paper.pdf) | zero-shot; rerun with the official [code](https://github.com/antoine77340/MIL-NCE_HowTo100M) |
-| Miech et al. |  **8.2** | **24.5** | **35.3** |       **24** | ICCV 2019   | [Miech et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) | |
+| MIL-NCE      | 13.9 | 36.3 | 48.9 |       11 | CVPR 2020   | [Miech et al.](https://openaccess.thecvf.com/content_CVPR_2020/papers/Miech_End-to-End_Learning_of_Visual_Representations_From_Uncurated_Instructional_Videos_CVPR_2020_paper.pdf) | zero-shot; rerun with the official [code](https://github.com/antoine77340/MIL-NCE_HowTo100M) |
+| MMV      | 11.7 | 33.4 | 45.4 |       13 | NeurIPS 2020   | [Alayrac et al.](https://proceedings.neurips.cc/paper/2020/file/0060ef47b12160b9198302ebdb144dcf-Paper.pdf) | zero-shot; 3190 test video clips |
+| MCN      | 18.1 | 35.5 | 45.2 |       - | ICCV 2021   | [Chen et al.](https://rpand002.github.io/data/ICCV_2021_mcn.pdf) | zero-shot  |
+| VideoCLIP      | **22.7** | **50.4** | **63.1** |       - | EMNLP 2021   | [Xu et al.](https://arxiv.org/pdf/2109.14084.pdf) | zero-shot; 3305 test video clips |
+| VATT      | - | - | 45.5 |       - | NeurIPS 2021   | [Akbari et al.](https://arxiv.org/pdf/2104.11178.pdf) | zero-shot; 3.1K test video clips |
+| Miech et al. |  8.2 | 24.5 | 35.3 |       24 | ICCV 2019   | [Miech et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Miech_HowTo100M_Learning_a_Text-Video_Embedding_by_Watching_Hundred_Million_Narrated_ICCV_2019_paper.pdf) | |
+| COOT |  16.7 | 40.2 | 52.3 | **9.0** | NeurIPS 2020   | [Ging et al.](https://proceedings.neurips.cc//paper/2020/file/ff0abbcc0227c9124a804b084d161a2d-Paper.pdf) | 3.2K test video clips |
+| DECEMBERT |  **17.0** | **43.8** | **59.8** | **9.0** | NAACL 2020   | [Tang et al.](https://aclanthology.org/2021.naacl-main.193.pdf) | |
 
-All these results were evaluated using [a subset of 3,350/3,492 video clips from the validation set that aren't present in HowTo100M](https://github.com/antoine77340/MIL-NCE_HowTo100M/blob/master/csv/validation_youcook.csv).
+**To the best of our knowledge, results were evaluated using [a subset of 3,350/3,492 video clips from the validation set that aren't present in HowTo100M](https://github.com/antoine77340/MIL-NCE_HowTo100M/blob/master/csv/validation_youcook.csv) unless otherwise noted. We highly recommend using this subset for a fair comparison.**
 
 
 ## Video Captioning
