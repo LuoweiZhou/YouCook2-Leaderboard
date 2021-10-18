@@ -1,5 +1,7 @@
 # YouCook2-Leaderboard
 
+**(Updated on 10/18/2021) YouCook2 captioning and text-to-retrieval are now a part of the [VALUE Benchmark](https://value-leaderboard.github.io/).**
+
 **(Updated on 02/03/2021) We have released the test set (segments only) to support the video captioning and object grounding task. ([Link to Download](http://youcook2.eecs.umich.edu/download)) In addition, we will release a set of caption annotations / evaluation server for the retrieval task separately later this year.**
 
 This repo hosts leaderboards on [YouCook2 dataset](http://youcook2.eecs.umich.edu/) and related resources. The main tasks concerned include text-to-video retrieval, video captioning, dense video description (captioning), and object grounding. Results are on the validation set unless otherwise specified. Note that until now, evaluation servers on the test set are available for video captioning, dense video description and object groudning (see [FQA](#faq) for details). We will add the support on video retrieval soon. See also our [policy](#faq) on arXiv papers.
