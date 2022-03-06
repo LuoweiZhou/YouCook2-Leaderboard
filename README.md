@@ -61,6 +61,7 @@ Evaluation on this task diverges into three modes: micro-level, macro-level, and
 | Trnsformer-XL | V | 6.56 | 14.76 | 26.35 | 6.30 | ACL 2019 | [Dai et al.](https://arxiv.org/pdf/1901.02860.pdf) | adopted and reported by [Lei et al.](https://arxiv.org/pdf/2005.05402.pdf) |
 | MART | V | 8.00 | 15.9 | 35.74 | 4.39 |ACL 2020 | [Lei et al.](https://arxiv.org/pdf/2005.05402.pdf) | [code](https://github.com/jayleicn/recurrent-transformer)  |
 | COOT+MART | V | 11.30 | 19.85 | 57.24 | 6.69 | NeurIPS 2020 | [Ging et al.](https://proceedings.neurips.cc/paper/2020/file/ff0abbcc0227c9124a804b084d161a2d-Paper.pdf) | MART model with COOT features, [code](https://github.com/gingsi/coot-videotext) |
+| SVPC | V+Ingredients | 12.1 | 21.6 | 77.3 | - | ACMMM 2021 | [Nishimura et al.](https://dl.acm.org/doi/10.1145/3474085.3475322) | Split the val set with val/test set and reported the results on the test set, [code](https://github.com/misogil0116/svpc)
 
 
 
